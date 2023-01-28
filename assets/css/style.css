@@ -1,0 +1,133 @@
+body {
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main .head-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main .head-title .title {
+    font-size: 50px;
+    color: rgb(0, 94, 255);
+}
+
+.card {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card .image {
+    width: 100%;
+    position: relative;
+}
+
+.card .image img {
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+.card .text {
+    padding: 15px;
+}
+
+.card .title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.card .text .info {
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.card .blogger {
+    display: flex;
+    gap: 32px;
+    margin-top: 28px;
+}
+
+.card .blogger .profil-pic {
+    width: 15%;
+    height: 15%;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.card .blogger .profil-pic img {
+    width: 100%;
+}
+
+.card .blogger .blogger-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card .blogger .blogger-info {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 0px;
+    line-height: 15px;
+}
+
+.card .blogger .blogger-info p {
+    margin: 0;
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+
+    .main .head-title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        box-shadow: rgba(14, 13, 13, 0.45) 0px 25px 20px -20px;
+    }
+    .main .head-title .title {
+        font-size: 50px;
+        color: rgb(2, 5, 10);
+    }
+
+
+
+    .card {
+        margin-bottom: 60px !important;
+        background-color: rgba(246, 170, 103, 0.762);
+    }
+
+    .card .text .title {
+        font-size: 42px !important;
+        line-height: 39px !important;
+    }
+
+    .card .text .info p {
+        line-height: 18px;
+        font-size: 18px;
+    }
+}
